@@ -8,7 +8,7 @@ public enum TipoDeCombustible {
 	
 	private final double  precioPorLitro;
 	
-	TipoCombustible(double precioPorLitro){
+	TipoDeCombustible(double precioPorLitro){
 		this.precioPorLitro= precioPorLitro;
 	}
 

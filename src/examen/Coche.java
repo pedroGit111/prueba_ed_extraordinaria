@@ -6,7 +6,7 @@ public class Coche {
 	private String modelo;
 	private int numeroPlazas;
 	private double velocidadMedia;
-	private String tipoCombustible;
+	private TipoDeCombustible tipoCombustible;
 	private double consumo;
 	
 	// Constructores
@@ -15,7 +15,7 @@ public class Coche {
 	}
 	
 		// Constructor parametrizado
-	public Coche(String matricula, String modelo, int numeroPlazas, double velocidadMedia, String tipoCombustible,
+	public Coche(String matricula, String modelo, int numeroPlazas, double velocidadMedia, TipoDeCombustible tipoCombustible,
 			double consumo) {
 		super();
 		this.matricula = matricula;
@@ -59,11 +59,11 @@ public class Coche {
 		this.velocidadMedia = velocidadMedia;
 	}
 
-	public String getTipoCombustible() {
+	public TipoDeCombustible getTipoCombustible() {
 		return tipoCombustible;
 	}
 
-	public void setTipoCombustible(String tipoCombustible) {
+	public void setTipoCombustible(TipoDeCombustible tipoCombustible) {
 		this.tipoCombustible = tipoCombustible;
 	}
 
@@ -75,18 +75,22 @@ public class Coche {
 		this.consumo = consumo;
 	}
 
-	// Método toString
+	// Método toString (método necesario para poder imprimir el objeto en la clase principal )
+	/**
+	 * método necesario para poder imprimir el objeto en la clase principal
+	 */
 	@Override
 	public String toString() {
 		return "Coche [matricula=" + matricula + ", modelo=" + modelo + ", numeroPlazas=" + numeroPlazas
 				+ ", velocidadMedia=" + velocidadMedia + ", tipoCombustible=" + tipoCombustible + ", consumo=" + consumo
 				+ "]";
+				
 	}
 	
 	
 
 	
-	
+
 	
 	
 	
